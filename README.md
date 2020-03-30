@@ -5,6 +5,11 @@ Ready to go kube-cron example
 
 [Another good resource](https://luludansmarue.github.io/kubernetes-docker-lab/k8s/deployment/cron.html)
 
+## Pre-reqs 
+[Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) 
+
+[Skaffold](https://skaffold.dev/docs/install/) `Optional`
+
 ## Steps 
 ```
 kubectl create -f cronjob.yaml
