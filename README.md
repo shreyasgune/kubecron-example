@@ -11,6 +11,17 @@ Ready to go kube-cron example
 [Skaffold](https://skaffold.dev/docs/install/) `Optional`
 
 ## Steps 
+1. Create your script , in this case, its `myscript.sh`
+2. Create your Dockerfile, build and test the image locally.
+    ``` 
+        docker build -t <org>/<repo-name>:tag .
+        docker run <org>/<reponame>:tag 
+        >> output of the script
+    ```
+3. Push your image to your image registry : dockerhub, gcr, quay etc
+    `docker push <org>/<reponame>:tag` 
+4. `minikube start`
+5. Kubectl commands to test your cron.
 ```
 kubectl create -f cronjob.yaml
 
