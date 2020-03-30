@@ -1,0 +1,12 @@
+apiVersion: skaffold/v1alpha2
+kind: Config
+build:
+  artifacts:
+  - imageName: shreyasgune/kubecron-demo
+    workspace: .
+  local: {}
+
+deploy:
+  kubectl:
+    manifests:
+      - cronjob.yaml
